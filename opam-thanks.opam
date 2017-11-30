@@ -1,0 +1,12 @@
+opam-version: "1.2"
+maintainer: "Marek Kubica <marek@xivilization.net>"
+author: "Marek Kubica <marek@xivilization.net>"
+homepage: "https://github.com/Leonidas-from-XIV/opam-thanks"
+dev-repo: "git@github.com:Leonodas-from-XIV/opam-thanks.git"
+bug-reports: "https://github.com/Leonidas-from-XIV/opam-thanks/issues"
+license: "LGPL-3.0 with OCaml linking exception"
+build: [["jbuilder" "build" "-p" name "-j" jobs]]
+depends: [
+  "github-unix" {>= "3.0.1"}
+  "jbuilder" {build}
+]
